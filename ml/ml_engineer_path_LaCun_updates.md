@@ -1,23 +1,18 @@
-# ML Engineer Learning Path - 6 Month Sprint
-
+# ML Engineer Learning Path - 6 Month Sprint (UPDATED)
 ## Windows 11 + WSL, Crypto + Nutrition Focus
-
 ---
 
 ## Phase 1: Foundations (Weeks 1-3)
-
 **Goal**: Get comfortable with Python data manipulation and ML thinking  
 **Timeline**: Move fast, these are prerequisites not portfolio pieces
 
 ### Core Skills
-
 - **Python fundamentals for ML**: virtual environments, imports, package structure
 - **NumPy & Pandas deep dive**: indexing, groupby, merges, reshaping, handling missing data
 - **Statistics**: distributions, hypothesis testing, correlation, p-values, Bayesian thinking
   - *Concepts*: Mean/median/mode, standard deviation, normal distribution, sampling
 
 ### Quick Learning Projects (Not Portfolio)
-
 1. **EDA on Crypto historical data** (2-3 hours)
    - Fetch 5 years of Bitcoin data from CoinGecko
    - Calculate returns, volatility, drawdowns
@@ -31,7 +26,6 @@
    - *Concepts touched*: API integration, data normalization, statistical relationships
 
 ### Deliverables
-
 - GitHub repo with clean Python structure (setup.py, requirements.txt, notebooks)
 - Two small Jupyter notebooks showing EDA work
 - **Portfolio status**: Skip these, they're warmup
@@ -39,12 +33,10 @@
 ---
 
 ## Phase 2: ML Fundamentals (Weeks 4-7)
-
 **Goal**: Build your first real ML models using Scikit-learn  
 **Timeline**: 4 weeks, starting portfolio work
 
 ### Core Frameworks & Concepts
-
 - **Scikit-learn mastery**:
   - *Concepts*: train/test split, cross-validation, hyperparameter tuning, overfitting
   - Classification: logistic regression, decision trees, random forests, SVM
@@ -56,10 +48,9 @@
   - *Concepts*: accuracy, precision, recall, F1, ROC-AUC, confusion matrix, MSE/RMSE/MAE
 
 ### **START: Crypto Mega-Project - Part 1**
-
 **"Crypto Market Intelligence System"** (PORTFOLIO PIECE)
-**Week 4-5: Crypto Price Prediction & Market Classification**
 
+**Week 4-5: Crypto Price Prediction & Market Classification**
 - Fetch Bitcoin + Ethereum daily data (5 years) from CoinGecko
 - Feature engineering:
   - Technical indicators: SMA, EMA, RSI, MACD, Bollinger Bands
@@ -77,7 +68,6 @@
   - *Concepts*: ROC-AUC, precision-recall tradeoff, learning curves, overfitting detection
 
 **Deliverables for Week 4-5**:
-
 - Jupyter notebook with full pipeline: data → features → models → evaluation
 - Model performance comparison table
 - Feature importance visualization
@@ -86,12 +76,10 @@
 ---
 
 ## Phase 3: Deep Learning Basics (Weeks 8-10)
-
 **Goal**: Understand neural networks, move beyond Scikit-learn  
 **Timeline**: 3 weeks
 
 ### Core Frameworks & Concepts
-
 - **PyTorch fundamentals**:
   - *Concepts*: Tensors, autograd, gradients, backpropagation
   - Neural network architecture: layers, activation functions, loss functions
@@ -103,11 +91,9 @@
   - *Architectures*: LSTM, GRU (recurrent neural networks)
 
 ### **CONTINUE: Crypto Mega-Project - Part 2**
-
 **"Crypto Market Intelligence System"** (PORTFOLIO PIECE)
 
 **Week 8-9: Time-Series Forecasting with Neural Networks**
-
 - Build LSTM model to predict Bitcoin price movement
   - *Concepts*: Sequence-to-sequence, hidden state, time-step selection
   - Data preparation: rolling windows, normalization for neural networks
@@ -118,23 +104,18 @@
   - *Concepts*: Underfitting vs overfitting, learning curves, early stopping
 
 **Week 9-10: Sentiment Analysis on Crypto News**
-
 - Scrape/collect crypto news headlines (Twitter, Reddit, news APIs)
-- Build basic sentiment classifier
-  - *Concepts*: Text preprocessing (tokenization, stopwords), bag-of-words, embedding layers
-  - Use pre-trained embeddings or build simple neural network classifier
-  - *Algorithms*: Embedding layers, CNN for text, or simple dense networks
-  - Yann LeCun adds:
-    - Architecture: Embedding → LSTM/GRU → Dense classifier
-    - Algorithms: Embedding layers, RNN, cross-entropy loss
+- Build basic sentiment classifier using PyTorch
+  - *Concepts*: Text preprocessing (tokenization, stopwords), embedding layers
+  - Architecture: Embedding → LSTM/GRU → Dense classifier
+  - *Algorithms*: Embedding layers, RNN, cross-entropy loss
 
 - Combine sentiment with price data
   - *Concepts*: Feature engineering across modalities, lagged features
 
 **Deliverables for Week 8-10**:
-
 - Jupyter notebook with LSTM implementation
-- Sentiment analysis notebook
+- Sentiment analysis notebook with PyTorch
 - Comparison: LSTM vs traditional models performance
 - Time-series visualization with predictions
 - **Portfolio status**: YES - Keep all this, it's impressive
@@ -142,22 +123,18 @@
 ---
 
 ## Phase 4: Recommendation Systems & Advanced Models (Weeks 11-13)
-
 **Goal**: Build real recommendation engines, introduce advanced ML concepts  
 **Timeline**: 3 weeks
 
 ### Recommendation Systems Concepts
-
 - *Concepts*: Collaborative filtering, content-based filtering, hybrid approaches
 - *Algorithms*: Matrix factorization, cosine similarity, user/item embeddings, ranking
 - *Evaluation*: Precision@K, recall@K, NDCG, coverage, diversity
 
 ### **CONTINUE: Crypto Mega-Project - Part 3**
-
 **"Crypto Market Intelligence System"** (PORTFOLIO PIECE)
 
 **Week 11-12: Token Recommendation Engine**
-
 - Build multiple recommendation approaches:
   - **Content-based**: Recommend similar cryptocurrencies based on technical features (correlation, market cap trends, volatility profile)
     - *Algorithms*: Cosine similarity, KNN
@@ -171,7 +148,6 @@
   - *Concepts*: Precision@K, recall@K, coverage, diversity metrics
 
 **Week 12-13: Feature Engineering & Advanced Preprocessing**
-
 - Advanced feature engineering:
   - *Concepts*: Polynomial features, interaction terms, domain-specific features
   - On-chain metrics if available (addresses, transaction volume, etc.)
@@ -181,7 +157,6 @@
   - *Concepts*: Ablation studies, feature importance
 
 **Deliverables for Week 11-13**:
-
 - Recommendation engine notebook with all 3 approaches
 - Performance comparison table
 - Example recommendations with explanations
@@ -190,12 +165,10 @@
 ---
 
 ## Phase 5: Production & Deployment (Weeks 14-16)
-
 **Goal**: Ship real code, not just notebooks  
 **Timeline**: 3 weeks
 
 ### Core Technologies
-
 - **Docker**: Images, containers, volumes, docker-compose
 - **FastAPI**: REST endpoints, request validation, error handling
 - **Model serving**: Loading models, inference, caching
@@ -204,7 +177,6 @@
 ### **FINALIZE: Crypto Mega-Project - Part 4 + START: Nutrition Mega-Project**
 
 **Week 14: Containerize & Serve Crypto System**
-
 - Refactor Crypto notebooks into production Python modules
   - *Concepts*: Code organization, error handling, logging
   
@@ -223,7 +195,6 @@
 **Week 15-16: START Nutrition Mega-Project - Part 1 + CI/CD**
 
 **Week 15: CI/CD Pipeline for Crypto System**
-
 - GitHub Actions workflow:
   - Lint code (flake8, black)
   - Run unit tests on models
@@ -248,7 +219,6 @@
   - *Algorithms*: Random Forest, SVM, logistic regression
 
 **Deliverables for Week 14-16**:
-
 - Crypto system: Fully containerized FastAPI app in Docker
 - GitHub repo with CI/CD pipeline (GitHub Actions)
 - MLflow tracking dashboard (local)
@@ -257,222 +227,179 @@
 
 ---
 
-## Phase 6: Advanced Techniques & Production ML (Weeks 17-24)
-
-**Goal**: Production-level ML, Transformers, and C++ integration
-**Timeline**: 8 weeks (this is where you really shine)
+## Phase 6: Advanced Techniques, Transformers, C++ Integration & Future Directions (Weeks 17-24)
+**Goal**: Production ML, fine-tuned Transformers, C++ inference, AND future ML research directions  
+**Timeline**: 8 weeks
 
 ### Advanced Concepts
-
 - *Concepts*: Transfer learning, fine-tuning, ensemble methods, attention mechanisms
 - *Algorithms*: Transformers, graph neural networks (optional), advanced time-series (Prophet)
-- *Frameworks*: TensorFlow basics, Hugging Face Transformers, XGBoost
-  - Yann LeCun adds:
-    - Frameworks: Hugging Face Transformers, PyTorch model export, ONNX
-    - Production: Model optimization, C++ inference, batch processing
+- *Frameworks*: TensorFlow basics, Hugging Face Transformers, XGBoost, ONNX, PyTorch model export
+- **LeCun-Inspired Directions**: Energy-based models, world models, model predictive control, joint embeddings
 
 ### **CONTINUE & FINISH: Nutrition Mega-Project**
 
 **Week 17-18: Neural Networks for Nutrition**
-
 - Build PyTorch models:
   - **Meal recommendation neural network**: Embed foods, learn similarity in latent space
-    - *Concepts*: Embedding layers, similarity learning, metric learning
+    - *Concepts*: Embedding layers, similarity learning, metric learning, joint embeddings
   - **Dietary classification**: Multi-label classification (foods can fit multiple diets)
     - *Algorithms*: Multi-label sigmoid, BCEWithLogitsLoss
   
 - Advanced recommendation approaches:
   - **Content-based with embeddings**: Learn food embeddings that capture nutritional similarity
-    - *Concepts*: Representation learning, latent factors
+    - *Concepts*: Representation learning, latent factors, joint embedding spaces (LeCun approach)
   - **Collaborative filtering lite**: Group foods by nutritional profile, recommend within groups
-    - *Algorithms*: K-means clustering, similarity ranking
+    - *Algorithms*: K-means clustering on embeddings, similarity ranking
 
-**Week 19-20: NLP for Recipes & Advanced Features**
-
-- Optional: Scrape recipe data (AllRecipes, etc.) or use public recipe datasets
-- NLP tasks:
-  - **Recipe understanding**: Extract ingredients, cooking methods, tags
-    - *Concepts*: Named entity recognition (NER), text parsing
-  - **Recipe recommendation**: Recommend recipes matching nutritional goals + cuisine preferences
-    - *Concepts*: Multi-modal learning, ranking algorithms
-
-- Advanced feature engineering:
-  - Seasonal availability of ingredients
-  - Prep time vs nutritional density
-  - Allergen risk scoring
-  - *Concepts*: Domain-specific feature construction
-
-## Yann LeCun Replacement for week 19 - 20
-
-- Crypto News Classification: Fine-tune a small Transformer model on crypto news
+**Week 19-20: Transformers & Fine-Tuning for Domain Tasks**
+- **Crypto News Classification**: Fine-tune a small Transformer model on crypto news
   - Use Hugging Face Transformers library (DistilBERT or ALBERT for efficiency)
   - Fine-tune on crypto sentiment/category classification
-  - Concepts: Transfer learning, pre-trained embeddings, fine-tuning heads
-  - Algorithms: Attention mechanisms, tokenization with special tokens
+  - *Concepts*: Transfer learning, pre-trained embeddings, fine-tuning heads
+  - *Algorithms*: Attention mechanisms, tokenization with special tokens
 
-- Nutrition Recipe Understanding: Fine-tune for ingredient extraction or recipe classification
+- **Nutrition Recipe Understanding**: Fine-tune for ingredient extraction or recipe classification
   - Fine-tune on recipe data for named entity recognition or multi-label classification
-  - Concepts: Domain-specific fine-tuning, handling variable-length inputs
-  - Algorithms: Transformer encoders, classification heads
+  - *Concepts*: Domain-specific fine-tuning, handling variable-length inputs
+  - *Algorithms*: Transformer encoders, classification heads
 
 - Model comparison: Custom LSTM vs Fine-tuned Transformer on same task
   - Metrics: Accuracy, F1, inference speed
-  - Concepts: When to use transfer learning vs training from scratch
+  - *Concepts*: When to use transfer learning vs training from scratch
 
-**Week 21-22: Production & Serving**
+**Week 20-21: Energy-Based Models & Anomaly Detection (LeCun Future Direction)**
+- **Concept**: Energy-based models assign low energy to normal patterns, high energy to anomalies
+  - *Why*: LeCun argues this is more fundamental than generative/discriminative distinction
+  
+- **Crypto anomaly detection**:
+  - Train an energy function on normal market conditions using autoencoders or contrastive learning
+  - Use it to detect unusual price movements, volume spikes, volatility breaks
+  - *Algorithms*: Autoencoder energy scoring, one-class SVM baseline
+  - Compare to traditional statistical anomaly detection (z-score, isolation forest)
+  - *Concepts*: What makes something "anomalous," learned vs heuristic approaches
 
-- Refactor Nutrition notebooks → production modules
-- Build FastAPI endpoints:
-  - Endpoint 1: `POST /recommend-meal` - Get meal recommendations for goals (weight loss, muscle gain, etc.)
-  - Endpoint 2: `POST /analyze-recipe` - Analyze nutritional content of custom recipe
-  - Endpoint 3: `GET /meal-plan` - Generate multi-day meal plan
-  - *Concepts*: Stateless API design, caching, lazy loading
+- **Nutrition outlier detection**:
+  - Learn energy function over normal nutritional profiles
+  - Flag foods with unusual nutrient combinations
+  - *Concepts*: Latent space energy scoring, regularized methods (LeCun's recommendation)
+
+**Week 21-22: World Models & Model Predictive Control (LeCun Future Direction)**
+- **World Model Concept**: Learn to predict future states from current observations
+  - *Why*: LeCun argues this scales better than RL for planning
+  
+- **Crypto price dynamics world model**:
+  - Train a model to predict multi-step ahead: given current price/volume → predict next N steps
+  - Learn latent representation of market state
+  - *Algorithms*: Variational autoencoder (VAE) or latent dynamics model
+  - *Concepts*: Stochasticity in predictions, planning with learned models
+
+- **Model Predictive Control approach**:
+  - Use learned world model to plan: "What actions maximize returns?"
+  - Compare to pure RL approach (which LeCun discourages as primary)
+  - *Concepts*: Planning in learned latent space, when to use MPC vs RL
+
+- **Nutrition meal planning optimization**:
+  - Learn how meals combine nutritionally (interactions, synergies)
+  - Optimize meal plans using world model predictions (energy balance, nutrient bioavailability)
+  - *Concepts*: Multi-step planning, optimization in latent space
+
+---
+
+## Phase 6 (Continued): Production ML & C++ Integration (Weeks 22-24)
+
+**Week 22: Production ML & C++ Integration**
+- **Model Optimization & Export**:
+  - Convert PyTorch models to ONNX format (framework-agnostic)
+  - Quantization: INT8 quantization for faster inference
+  - Model pruning and distillation basics
+  - *Concepts*: Model size reduction, latency vs accuracy tradeoff
+
+- **C++ Inference Pipeline** (relevant to your job):
+  - Export a sentiment model and nutrition classifier to C++
+  - Use ONNX Runtime or torch::jit for C++ inference
+  - Build inference wrapper that matches your job's use case
+  - *Concepts*: Stateless inference servers, batch processing, error handling
+  - *Skills*: Reading C++ model serving code, understanding deployment constraints
+  - Load fine-tuned Transformers in C++ (use onnxruntime or cpp bindings)
+
+- **Refactor to Production Modules**:
+  - Nutrition notebooks → production Python modules
+  - Create inference-only modules (separate from training)
+  - Build FastAPI endpoints that use the optimized models
+
+- **Build FastAPI endpoints**:
+  - Endpoint 1: `POST /recommend-meal` - Get meal recommendations for goals
+  - Endpoint 2: `POST /analyze-recipe` - Analyze nutritional content + extract ingredients (uses fine-tuned NER)
+  - Endpoint 3: `GET /meal-plan` - Generate multi-day meal plan (uses world model optimization)
+  - Endpoint 4: `POST /classify-sentiment` - Classify crypto news sentiment (fine-tuned Transformer)
+  - Endpoint 5: `POST /detect-anomaly` - Detect market anomalies (energy-based model)
+  - *Concepts*: Stateless API design, model loading/caching, concurrent inference
 
 - Containerize with Docker
-- Add model versioning with MLflow
-- Set up CI/CD pipeline (same as Crypto)
+- Add model versioning with MLflow (track fine-tuning experiments, world model training)
 
-**Week 23-24: Polish & Portfolio Finalization**
+**Week 23-24: Polish & Production Deployment**
 
 - **Crypto System**:
   - Add monitoring/dashboards (optional: Grafana or Prometheus)
   - Document API thoroughly (README, API docs)
   - Add example notebooks showing usage
-  - Deploy somewhere accessible (local Docker for demo, or free tier cloud if feeling ambitious)
+  - Include C++ inference examples and benchmarks
+  - Document energy-based anomaly detector performance
 
 - **Nutrition System**:
   - Same polish as Crypto
-  - Ensure both systems are deployment-ready
-  - Create comparison document: what you learned from each
+  - Ensure all models are exported and optimized for C++
+  - Document fine-tuning process (reproducibility)
+  - Include performance benchmarks (Python vs C++ inference speed)
+  - Document world model planning workflow
+
+- **Learning Documentation**:
+  - Write a brief guide: "When to fine-tune vs train from scratch"
+  - Document ONNX export workflow for future projects
+  - Include C++ integration patterns you learned
+  - Write summary: "Energy-based models vs generative models" (LeCun perspective)
+  - Document world model approach for time-series prediction
 
 **Deliverables for Week 17-24**:
-
-- Nutrition system: Fully containerized FastAPI app with all endpoints
+- Nutrition system: Fully containerized FastAPI app with all endpoints (including world model planning)
 - Both Crypto & Nutrition: Polished GitHub repos with:
   - Clean code, proper documentation
   - CI/CD pipelines running
   - Example usage notebooks
-  - Performance benchmarks
-- Optional: Simple web frontend for one system (React, Vue, or just Streamlit)
+  - Performance benchmarks (inference speed, model size, anomaly detection accuracy)
+  - ONNX model exports for C++ integration
+  - Energy-based anomaly detection results
+  - World model predictions and planning examples
+- C++ inference examples showing how to use exported models and fine-tuned Transformers
+- Optional: Simple web frontend for one system (React, Vue, or Streamlit)
+- Research notes: How do energy-based models compare to your current generative approach?
 
-**Portfolio status**: BOTH systems = PRODUCTION-READY PORTFOLIO PIECES
+**Portfolio status**: BOTH systems = PRODUCTION-READY PORTFOLIO PIECES with C++ integration, cutting-edge research directions, AND practical industry applications
 
 ---
 
 ## Week 25+ (If You Have Time)
 
 ### Optional Advanced Topics
+- **Advanced C++ optimization**: Profile inference code, optimize batch sizes, GPU inference
+- **XGBoost & LightGBM**: Gradient boosting for structured data (crypto/nutrition)
+- **Distributed inference**: Multi-GPU or multi-model serving
+- **Model compression**: Knowledge distillation for Transformer models
+- **Kubernetes concepts**: Understand orchestration basics
 
-- **TensorFlow basics**: Compare to PyTorch, understand both
-- **XGBoost & LightGBM**: Gradient boosting for structured data (revisit crypto/nutrition with these)
-- **Fine-tuning large models**: Use Hugging Face to fine-tune a small LLM on crypto news or recipe reviews
-- **Graph neural networks**: Model relationships between cryptocurrencies or food ingredients
-- **Kubernetes concepts**: Understand orchestration (don't need to implement)
+### Advanced Learning (LeCun-Inspired Research Directions)
+If you want to explore future ML directions:
+- **Joint Embedding Spaces**: Build models where different modalities (price, sentiment, on-chain) map to same embedding space
+- **Regularized Methods**: Replace contrastive learning with regularization-based approaches for embeddings
+- **Advanced World Models**: Learn dynamics models with uncertainty quantification, use for robust planning
+- **Energy-Based Ranking**: Use energy-based models for ranking/recommendations instead of scoring
+- **Self-Supervised Learning**: Pre-train models on unlabeled crypto/nutrition data using energy-based approaches
+- These are research-level, optional but impressive if explored
 
 ### Optional Third Project
-
-If you want to build momentum, consider a quick third project combining learnings:
-
-- **Stock market analysis** (using Alpha Vantage API)
-- **Multi-asset portfolio optimizer** (crypto + stocks + real estate risk modeling)
-- This would be lighter than the first two, mostly showing you can apply patterns quickly
-
----
-
-## Your Portfolio Strategy
-
-### GitHub Repos to Create & Polish
-
-1. **crypto-intelligence-system** (PRIMARY PORTFOLIO)
-   - Data pipeline: CoinGecko API → cleaned data
-   - Scikit-learn models: regression, classification, clustering
-   - PyTorch models: LSTM for forecasting
-   - Sentiment analysis on news
-   - Recommendation engine (3 approaches)
-   - FastAPI application with Docker
-   - CI/CD pipeline
-   - README with results, architecture diagram, how to run
-
-2. **nutrition-intelligence-system** (PRIMARY PORTFOLIO)
-   - Same structure as crypto
-   - USDA FoodData Central integration
-   - Dietary classification + meal recommendations
-   - Recipe analysis (if you go that route)
-   - FastAPI application with Docker
-   - CI/CD pipeline
-
-### Quick Learning Projects (DON'T PORTFOLIO)
-
-- Week 1-3 EDA notebooks (reference only, don't share)
-- Individual model experiments that got superseded
-
-### What to Emphasize in Interviews
-
-"I built two end-to-end ML systems from data to production:
-
-- **Crypto system**: Handles time-series forecasting, NLP sentiment analysis, and recommendation engines, deployed with FastAPI + Docker + CI/CD
-- **Nutrition system**: Demonstrates recommendation systems, multi-modal learning, and production ML ops
-- Both systems use real-time/continuously updated data, real models across Scikit-learn/PyTorch, and are production-ready"
-
-This is MUCH stronger than "I did Kaggle competitions" or "I trained MNIST"
-
----
-
-## Windows 11 + WSL Setup Notes
-
-### Tools You'll Need
-
-```
-Python 3.10+
-pip, virtualenv
-Git
-Docker Desktop (runs in WSL2)
-VS Code + WSL remote extension
-Jupyter Lab (for development)
-```
-
-### Development Workflow
-
-```bash
-# In WSL terminal
-python -m venv venv
-source venv/bin/activate
-pip install pandas numpy scikit-learn torch fastapi uvicorn docker pytest
-
-# For each project
-git clone <your-repo>
-cd project
-python -m pytest  # Run tests
-uvicorn app:app --reload  # Run API locally
-docker build -t my-ml-app .  # Build image
-docker run -p 8000:8000 my-ml-app  # Run container
-```
-
-### Compute Reality
-
-- Scikit-learn models: Instant
-- PyTorch on CPU: Fast enough for learning (seconds to minutes)
-- Small LSTM models (crypto): Minutes
-- Full nutrition dataset: No problem
-- Never going to train huge LLMs, but that's fine—you're not supposed to yet
-
----
-
-## Pacing Tips for "Fast Baby"
-
-- Don't get stuck on perfect code in weeks 1-3, move fast
-- Use Jupyter notebooks for exploration, convert to .py modules for production
-- Don't implement from scratch—use libraries (Scikit-learn, PyTorch, etc.)
-- Aim for "works" before "perfect"
-- Save polish/documentation for week 14 onward when you have full systems
-
----
-
-## Key Success Metrics
-
-By end of Week 6: Two working end-to-end ML pipelines (one crypto, starting nutrition)
-By end of Week 13: Recommendation engines working on both projects
-By end of Week 16: Crypto system production-ready with API + Docker + tests
-By end of Week 24: Both systems fully polished and deployment-ready
-
-If you hit these, you're in excellent shape for ML engineer interviews.
+If you want to build momentum:
+- **Stock market analysis** (using Alpha Vantage API) with energy-based anomaly detection
+- **Multi-asset portfolio optimizer** (crypto + stocks + real estate) using world models and MPC
+- This would be lighter than the first two, mostly showing you can apply patterns quickly and incorporate LeCun directions
