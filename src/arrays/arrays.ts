@@ -75,4 +75,17 @@ export class ArrayProblems {
 
     return true
   }
+
+  twoSum(nums: number[], target: number): [number, number] {
+
+    let hash: {} = {}
+
+    for (let i = 0; i <= nums.length; i++) {
+      if( (target - nums[i]) in hash) {
+        return [hash[target - nums[i]], i]
+      } else {
+        hash[nums[i] = nums[i]]
+      }
+    }
+  }
 }
