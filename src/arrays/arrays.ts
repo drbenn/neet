@@ -12,18 +12,6 @@ export class ArrayProblems {
 
   containsDuplicateSort(input: number[]): boolean {
 
-    // sort is better than brute force of taking an unsorted listed and for each item checking every other item...which would be 
-    // time complexity O(n^2)
-    // space complexity 0(1)
-
-    // with sort we upgrade to
-    // time complexity O(nlogn) because the sort algorithm does take some time
-    // space complexity 0(1)
-
-    // however, the most optimal solution is using a hash set ... in the next function
-    // time complexity O(n)
-    // space complexity 0(n)
-
     const sortedInput: number[] = input.sort((a,b) => a- b)
 
     let recent: number | null = null
@@ -54,5 +42,37 @@ export class ArrayProblems {
       }
     }
     return false
+  }
+
+  isAnagram(s: string, t: string): boolean {
+    if (s.length !== t.length) {
+      return false
+    }
+    let sList: { [key: string]: number} = {}
+    let tList: { [key: string]: number} = {}
+
+    for (let i = 0; i <= s.length; i++) {
+      console.log('IUUSHIHU');
+      
+      const sLetter = s[i]
+      console.log(sLetter);
+      
+      sLetter in sList ? sList[sLetter] += 1 : sList[sLetter] = 1
+      console.log(sList);
+      
+
+      const tLetter = t[i]
+      tLetter in tList ? tList[tLetter] += 1 : tList[tLetter] = 1
+    }
+
+    for (const key in sList) {
+      if (sList[key] !== tList[key]) {
+        return false
+      }
+    }
+            console.log(sList)
+        console.log(tList)
+
+    return true
   }
 }

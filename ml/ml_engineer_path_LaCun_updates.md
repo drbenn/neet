@@ -1,18 +1,23 @@
 # ML Engineer Learning Path - 6 Month Sprint (UPDATED)
+
 ## Windows 11 + WSL, Crypto + Nutrition Focus
+
 ---
 
 ## Phase 1: Foundations (Weeks 1-3)
+
 **Goal**: Get comfortable with Python data manipulation and ML thinking  
 **Timeline**: Move fast, these are prerequisites not portfolio pieces
 
 ### Core Skills
+
 - **Python fundamentals for ML**: virtual environments, imports, package structure
 - **NumPy & Pandas deep dive**: indexing, groupby, merges, reshaping, handling missing data
 - **Statistics**: distributions, hypothesis testing, correlation, p-values, Bayesian thinking
   - *Concepts*: Mean/median/mode, standard deviation, normal distribution, sampling
 
 ### Quick Learning Projects (Not Portfolio)
+
 1. **EDA on Crypto historical data** (2-3 hours)
    - Fetch 5 years of Bitcoin data from CoinGecko
    - Calculate returns, volatility, drawdowns
@@ -26,6 +31,7 @@
    - *Concepts touched*: API integration, data normalization, statistical relationships
 
 ### Deliverables
+
 - GitHub repo with clean Python structure (setup.py, requirements.txt, notebooks)
 - Two small Jupyter notebooks showing EDA work
 - **Portfolio status**: Skip these, they're warmup
@@ -33,10 +39,12 @@
 ---
 
 ## Phase 2: ML Fundamentals (Weeks 4-7)
+
 **Goal**: Build your first real ML models using Scikit-learn  
 **Timeline**: 4 weeks, starting portfolio work
 
 ### Core Frameworks & Concepts
+
 - **Scikit-learn mastery**:
   - *Concepts*: train/test split, cross-validation, hyperparameter tuning, overfitting
   - Classification: logistic regression, decision trees, random forests, SVM
@@ -48,9 +56,11 @@
   - *Concepts*: accuracy, precision, recall, F1, ROC-AUC, confusion matrix, MSE/RMSE/MAE
 
 ### **START: Crypto Mega-Project - Part 1**
+
 **"Crypto Market Intelligence System"** (PORTFOLIO PIECE)
 
 **Week 4-5: Crypto Price Prediction & Market Classification**
+
 - Fetch Bitcoin + Ethereum daily data (5 years) from CoinGecko
 - Feature engineering:
   - Technical indicators: SMA, EMA, RSI, MACD, Bollinger Bands
@@ -68,6 +78,7 @@
   - *Concepts*: ROC-AUC, precision-recall tradeoff, learning curves, overfitting detection
 
 **Deliverables for Week 4-5**:
+
 - Jupyter notebook with full pipeline: data → features → models → evaluation
 - Model performance comparison table
 - Feature importance visualization
@@ -76,10 +87,12 @@
 ---
 
 ## Phase 3: Deep Learning Basics (Weeks 8-10)
+
 **Goal**: Understand neural networks, move beyond Scikit-learn  
 **Timeline**: 3 weeks
 
 ### Core Frameworks & Concepts
+
 - **PyTorch fundamentals**:
   - *Concepts*: Tensors, autograd, gradients, backpropagation
   - Neural network architecture: layers, activation functions, loss functions
@@ -91,9 +104,11 @@
   - *Architectures*: LSTM, GRU (recurrent neural networks)
 
 ### **CONTINUE: Crypto Mega-Project - Part 2**
+
 **"Crypto Market Intelligence System"** (PORTFOLIO PIECE)
 
 **Week 8-9: Time-Series Forecasting with Neural Networks**
+
 - Build LSTM model to predict Bitcoin price movement
   - *Concepts*: Sequence-to-sequence, hidden state, time-step selection
   - Data preparation: rolling windows, normalization for neural networks
@@ -104,6 +119,7 @@
   - *Concepts*: Underfitting vs overfitting, learning curves, early stopping
 
 **Week 9-10: Sentiment Analysis on Crypto News**
+
 - Scrape/collect crypto news headlines (Twitter, Reddit, news APIs)
 - Build basic sentiment classifier using PyTorch
   - *Concepts*: Text preprocessing (tokenization, stopwords), embedding layers
@@ -114,6 +130,7 @@
   - *Concepts*: Feature engineering across modalities, lagged features
 
 **Deliverables for Week 8-10**:
+
 - Jupyter notebook with LSTM implementation
 - Sentiment analysis notebook with PyTorch
 - Comparison: LSTM vs traditional models performance
@@ -123,18 +140,22 @@
 ---
 
 ## Phase 4: Recommendation Systems & Advanced Models (Weeks 11-13)
+
 **Goal**: Build real recommendation engines, introduce advanced ML concepts  
 **Timeline**: 3 weeks
 
 ### Recommendation Systems Concepts
+
 - *Concepts*: Collaborative filtering, content-based filtering, hybrid approaches
 - *Algorithms*: Matrix factorization, cosine similarity, user/item embeddings, ranking
 - *Evaluation*: Precision@K, recall@K, NDCG, coverage, diversity
 
 ### **CONTINUE: Crypto Mega-Project - Part 3**
+
 **"Crypto Market Intelligence System"** (PORTFOLIO PIECE)
 
 **Week 11-12: Token Recommendation Engine**
+
 - Build multiple recommendation approaches:
   - **Content-based**: Recommend similar cryptocurrencies based on technical features (correlation, market cap trends, volatility profile)
     - *Algorithms*: Cosine similarity, KNN
@@ -148,6 +169,7 @@
   - *Concepts*: Precision@K, recall@K, coverage, diversity metrics
 
 **Week 12-13: Feature Engineering & Advanced Preprocessing**
+
 - Advanced feature engineering:
   - *Concepts*: Polynomial features, interaction terms, domain-specific features
   - On-chain metrics if available (addresses, transaction volume, etc.)
@@ -157,6 +179,7 @@
   - *Concepts*: Ablation studies, feature importance
 
 **Deliverables for Week 11-13**:
+
 - Recommendation engine notebook with all 3 approaches
 - Performance comparison table
 - Example recommendations with explanations
@@ -165,10 +188,12 @@
 ---
 
 ## Phase 5: Production & Deployment (Weeks 14-16)
+
 **Goal**: Ship real code, not just notebooks  
 **Timeline**: 3 weeks
 
 ### Core Technologies
+
 - **Docker**: Images, containers, volumes, docker-compose
 - **FastAPI**: REST endpoints, request validation, error handling
 - **Model serving**: Loading models, inference, caching
@@ -177,6 +202,7 @@
 ### **FINALIZE: Crypto Mega-Project - Part 4 + START: Nutrition Mega-Project**
 
 **Week 14: Containerize & Serve Crypto System**
+
 - Refactor Crypto notebooks into production Python modules
   - *Concepts*: Code organization, error handling, logging
   
@@ -195,6 +221,7 @@
 **Week 15-16: START Nutrition Mega-Project - Part 1 + CI/CD**
 
 **Week 15: CI/CD Pipeline for Crypto System**
+
 - GitHub Actions workflow:
   - Lint code (flake8, black)
   - Run unit tests on models
@@ -219,6 +246,7 @@
   - *Algorithms*: Random Forest, SVM, logistic regression
 
 **Deliverables for Week 14-16**:
+
 - Crypto system: Fully containerized FastAPI app in Docker
 - GitHub repo with CI/CD pipeline (GitHub Actions)
 - MLflow tracking dashboard (local)
@@ -228,10 +256,12 @@
 ---
 
 ## Phase 6: Advanced Techniques, Transformers, C++ Integration & Future Directions (Weeks 17-24)
+
 **Goal**: Production ML, fine-tuned Transformers, C++ inference, AND future ML research directions  
 **Timeline**: 8 weeks
 
 ### Advanced Concepts
+
 - *Concepts*: Transfer learning, fine-tuning, ensemble methods, attention mechanisms
 - *Algorithms*: Transformers, graph neural networks (optional), advanced time-series (Prophet)
 - *Frameworks*: TensorFlow basics, Hugging Face Transformers, XGBoost, ONNX, PyTorch model export
@@ -240,6 +270,7 @@
 ### **CONTINUE & FINISH: Nutrition Mega-Project**
 
 **Week 17-18: Neural Networks for Nutrition**
+
 - Build PyTorch models:
   - **Meal recommendation neural network**: Embed foods, learn similarity in latent space
     - *Concepts*: Embedding layers, similarity learning, metric learning, joint embeddings
@@ -253,6 +284,7 @@
     - *Algorithms*: K-means clustering on embeddings, similarity ranking
 
 **Week 19-20: Transformers & Fine-Tuning for Domain Tasks**
+
 - **Crypto News Classification**: Fine-tune a small Transformer model on crypto news
   - Use Hugging Face Transformers library (DistilBERT or ALBERT for efficiency)
   - Fine-tune on crypto sentiment/category classification
@@ -269,6 +301,7 @@
   - *Concepts*: When to use transfer learning vs training from scratch
 
 **Week 20-21: Energy-Based Models & Anomaly Detection (LeCun Future Direction)**
+
 - **Concept**: Energy-based models assign low energy to normal patterns, high energy to anomalies
   - *Why*: LeCun argues this is more fundamental than generative/discriminative distinction
   
@@ -285,6 +318,7 @@
   - *Concepts*: Latent space energy scoring, regularized methods (LeCun's recommendation)
 
 **Week 21-22: World Models & Model Predictive Control (LeCun Future Direction)**
+
 - **World Model Concept**: Learn to predict future states from current observations
   - *Why*: LeCun argues this scales better than RL for planning
   
@@ -309,6 +343,7 @@
 ## Phase 6 (Continued): Production ML & C++ Integration (Weeks 22-24)
 
 **Week 22: Production ML & C++ Integration**
+
 - **Model Optimization & Export**:
   - Convert PyTorch models to ONNX format (framework-agnostic)
   - Quantization: INT8 quantization for faster inference
@@ -363,6 +398,7 @@
   - Document world model approach for time-series prediction
 
 **Deliverables for Week 17-24**:
+
 - Nutrition system: Fully containerized FastAPI app with all endpoints (including world model planning)
 - Both Crypto & Nutrition: Polished GitHub repos with:
   - Clean code, proper documentation
@@ -383,6 +419,7 @@
 ## Week 25+ (If You Have Time)
 
 ### Optional Advanced Topics
+
 - **Advanced C++ optimization**: Profile inference code, optimize batch sizes, GPU inference
 - **XGBoost & LightGBM**: Gradient boosting for structured data (crypto/nutrition)
 - **Distributed inference**: Multi-GPU or multi-model serving
@@ -390,7 +427,9 @@
 - **Kubernetes concepts**: Understand orchestration basics
 
 ### Advanced Learning (LeCun-Inspired Research Directions)
+
 If you want to explore future ML directions:
+
 - **Joint Embedding Spaces**: Build models where different modalities (price, sentiment, on-chain) map to same embedding space
 - **Regularized Methods**: Replace contrastive learning with regularization-based approaches for embeddings
 - **Advanced World Models**: Learn dynamics models with uncertainty quantification, use for robust planning
@@ -399,7 +438,9 @@ If you want to explore future ML directions:
 - These are research-level, optional but impressive if explored
 
 ### Optional Third Project
+
 If you want to build momentum:
+
 - **Stock market analysis** (using Alpha Vantage API) with energy-based anomaly detection
 - **Multi-asset portfolio optimizer** (crypto + stocks + real estate) using world models and MPC
 - This would be lighter than the first two, mostly showing you can apply patterns quickly and incorporate LeCun directions

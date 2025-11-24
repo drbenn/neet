@@ -25,12 +25,17 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
 const ArrayProbs = new ArrayProblems('jerk')
-ArrayProbs.yolo()
+// ArrayProbs.yolo()
 
-console.time("Function containsDuplicateSort Time"); // Start timer with a label
-console.log(ArrayProbs.containsDuplicateSort([1,2,3,4, 5,6,7,8,9,10,11,11]))
-console.timeEnd("Function containsDuplicateSort Time"); // Stop timer and print the duration
+// console.time("Function containsDuplicateSort Time"); // Start timer with a label
+// console.log(ArrayProbs.containsDuplicateSort([1,2,3,4, 5,6,7,8,9,10,11,11]))
+// console.timeEnd("Function containsDuplicateSort Time"); // Stop timer and print the duration
 
-console.time("Function containsDuplicateHashSet Time"); // Start timer with a label
-console.log(ArrayProbs.containsDuplicateHashSet([1,2,3,4, 5,6,7,8,9,10,11,11]))
-console.timeEnd("Function containsDuplicateHashSet Time"); // Stop timer and print the duration
+// console.time("Function containsDuplicateHashSet Time"); // Start timer with a label
+// console.log(ArrayProbs.containsDuplicateHashSet([1,2,3,4, 5,6,7,8,9,10,11,11]))
+// console.timeEnd("Function containsDuplicateHashSet Time"); // Stop timer and print the duration
+
+// console.log(ArrayProbs.isAnagram("racecar", "carrace"))
+
+console.log(ArrayProbs.twoSum([3,4,5,6], 7));
+
