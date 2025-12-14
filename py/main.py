@@ -8,5 +8,5 @@ arrayProbs = ArrayProbs()
 # valid_anagram = arrayProbs.valid_anagram("racecar", "carrace")
 # print(valid_anagram)
 
-two_sum = arrayProbs.two_sum([3,4,5,6], 7)
+two_sum = arrayProbs.twoSum([3,4,5,6], 7)
 print(two_sum)
